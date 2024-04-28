@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import TransactionsTable from "./components/TransactionsTable";
 import TransactionForm from "./components/TransactionForm";
 import SearchBar from "./components/SearchBar";
+import './App.css';
 
 function App() {
   const [transactions, setTransactions] = useState([]);

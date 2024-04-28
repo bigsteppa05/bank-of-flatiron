@@ -1,7 +1,7 @@
-// Parent component
+
 import React, { useState } from "react";
 import TransactionsTable from "./components/TransactionsTable";
-import TransactionForm from "./components/TransactionForm";
+import TransactionForm from "./components/TransactionsForm";
 import SearchBar from "./components/SearchBar";
 import './App.css';
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function TransactionForm({ onAddTransaction }) {
+function TransactionsForm({ onAddTransaction }) {
   const [date, setDate] = useState("");
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
@@ -51,5 +51,5 @@ function TransactionForm({ onAddTransaction }) {
   );
 }
 
-export default TransactionForm;
+export default TransactionsForm;
 

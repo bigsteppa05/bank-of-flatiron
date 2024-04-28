@@ -10,7 +10,7 @@ function TransactionsForm({ onAddTransaction }) {
     e.preventDefault();
     const newTransaction = { date, description, category, amount };
     onAddTransaction(newTransaction);
-    // Clearing the form fields after submission
+
     setDate("");
     setDescription("");
     setCategory("");

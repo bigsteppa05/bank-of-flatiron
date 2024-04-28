@@ -1,8 +1,8 @@
 // Parent component
 import React, { useState } from "react";
-import TransactionsTable from "./TransactionsTable";
-import TransactionForm from "./TransactionForm";
-import SearchBar from "./SearchBar";
+import TransactionsTable from "./components/TransactionsTable";
+import TransactionForm from "./components/TransactionForm";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   const [transactions, setTransactions] = useState([]);

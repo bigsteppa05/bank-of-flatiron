@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 function SearchBar({ onSearchTermChange }) {
+  const [searchTerm, setSearchTerm] = useState("");
+
   const handleChange = (e) => {
-    onSearchTermChange(e.target.value);
+    const term = e.target.value;
+    setSearchTerm(term);
+    onSearchTermChange(term);
   };
 
   return (
     <div>
-      <h2>Search Transactions</h2>
+      <h2>Search Transactions by Description</h2>
       <input
         type="text"
-        placeholder="Search..."
+        placeholder="Search by description..."
+        value={searchTerm}
         onChange={handleChange}
       />
     </div>
@@ -18,3 +23,4 @@ function SearchBar({ onSearchTermChange }) {
 }
 
 export default SearchBar;
+
